@@ -1,0 +1,17 @@
+# Actions
+
+## Implementation
+
+* make a generic interface with a execute method that every implementation has to implement
+  * example with mouse movement:
+    * the action is called "MoveMouseAction" and takes several parameters when contructor is used (from, to, time, speed etc...)
+    * stored in data structure in the current macro
+    * when the macro is called, each action gets executed by calling execute()
+      * maybe pass some kind of context class that allows access to fundamental informations
+        * macro that called the action 
+        * utility methods (?)
+       ==> but I think that this can be avoided by better design...
+    * maybe use some generic initialization of actions (with maps as parameter that contains all the needed information)
+      * IDEA: if user changes stuff, a new action object is created and replaces the old one 
+      		  OR
+      		  the old one is kept and the new parameters are just set by calling a method and passing the map (don't think that this one is "clean")

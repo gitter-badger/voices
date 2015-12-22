@@ -1,0 +1,19 @@
+# Passing arguments to already running application
+
+## Memory Mapped File
+1. try to get lock on lockfile
+  * if succeeded, launch normally
+  * if not, go to step 2
+2. open memory mapped file at location
+  * aquire write lock (using ReadWriteLock)
+    * if not possible, wait some time and try again...
+    * after x seconds, just terminate without passing arguments 
+  * write down arguments in file
+  * release write lock for other application instances
+  * close connection to file
+  * quit application
+
+3. running application checks for modification of file 
+  * if modified, reads all bytes into byte array and parses arguments (--variable_name=value)
+    * sets all variables to newer values
+  * deletes all content of file so length equals 0
