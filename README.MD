@@ -12,7 +12,7 @@
     * auto-activate them if the bound application is active
     * __IMPORTANT:__ Each profile needs an grammar file or a language model file!!!
     	* let the user either write his own grammar or let him enter sentences for the language model that will be created (first impl should only accept grammar files for easier usage and testing)
-    	* --> we need to expand the dictionary for new words (like e.g. direshift in hearthstone)
+    	* --> we need to expand the dictionary for new words (like e.g. direshift in hearthstoneq)
     
 * __macros__
     * general description (name, description)
