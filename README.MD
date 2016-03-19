@@ -1,5 +1,7 @@
 # Core Features
 
+[![Join the chat at https://gitter.im/SirWindfield/voices](https://badges.gitter.im/SirWindfield/voices.svg)](https://gitter.im/SirWindfield/voices?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 * __general__
     * toggle listening
     * also allow other programs to communicate with it (for example setting global variables from another program)
